@@ -1,0 +1,13 @@
+
+
+
+
+
+    <h3>Are you sure you want to delete "{{item}}"</h3>
+
+    <a href="{% url 'list' %}">Cancel</a><br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input class="btn btn-sm btn-info" type="submit" name="Confirm" value="delete">
+    </form>
+
